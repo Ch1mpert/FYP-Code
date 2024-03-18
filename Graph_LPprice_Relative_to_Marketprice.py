@@ -80,8 +80,6 @@ x[:, 0] = 0
 S = np.empty((m,N+1))
 S[:, 0] = 0
 
-#Why is it returning a bunch of 1s sometimes?
-
 brownian(x[:,0], N, dt, mu, delta, c, out=x[:,1:], S=S[:,1:])
 
 #print(sum(avg_hitting_time)/len(avg_hitting_time))
