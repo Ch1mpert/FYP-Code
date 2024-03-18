@@ -85,7 +85,7 @@ brownian(x[:,0], N, dt, mu, delta, c, out=x[:,1:], S=S[:,1:])
 #print(sum(avg_hitting_time)/len(avg_hitting_time))
 t = np.linspace(0.0, N*dt, N+1)
 for k in range(m):
-    #plot(t, x[k]+c, label='log(Market price)')
+    plot(t, x[k]+c, label='log(Market price)')
     plot(t, x[k]+2*c/math.sqrt(dt), label='B_n^mu+2c/sqrt(dt)')
     plot(t, x[k], label='B_n^mu', color='g')
     plot(t,S[k]+c, label="S_n^mu", color='r')
