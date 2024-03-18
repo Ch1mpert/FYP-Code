@@ -1,35 +1,5 @@
-import numpy as np
 import matplotlib.pyplot as plt
 import math
-
-# Parameters
-#T = 10  # Time period
-#N = 1000  # Number of steps
-#mu = 0.1  # Drift
-#c = 2
-
-# Generate Brownian motion with drift
-#dt = T / N
-#t = np.linspace(0, T, N+1)
-#dW = np.sqrt(dt) * np.random.randn(N)
-#W = np.cumsum(dW + mu * dt)
-#W = np.insert(W, 0, 0)  # Insert 0 at the beginning of W to match the dimensions
-
-# Calculate maximum of the Brownian motion with drift
-#max_W = np.maximum.accumulate(np.zeros(N),W-c)
-
-#print(max_W)
-# Plot
-#plt.plot(t, W)
-#plt.plot(t, W + c)
-#plt.plot(t, W - c)
-#plt.plot(t, max_W)
-#plt.xlabel('Time')
-#plt.ylabel('Value')
-#plt.title('Brownian Motion with Drift')
-#plt.grid(True)
-#plt.show()
-
 from scipy.stats import norm
 from math import sqrt
 from scipy.stats import norm
